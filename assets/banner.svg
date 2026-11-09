@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Animated Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .banner-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .banner-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      fill: #94a3b8;
+      letter-spacing: 0.2px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #e2e8f0;
+    }
+    .stat-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .stat-value {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      fill: #38bdf8;
+    }
+
+    /* Ambient Background Dynamic Waves and Orbs */
+    @keyframes floatOrb1 {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(40px, -25px) scale(1.1); }
+    }
+    @keyframes floatOrb2 {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-35px, 30px) scale(1.15); }
+    }
+    @keyframes pulseCard {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0); opacity: 0; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(380px); opacity: 0; }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -100; }
+    }
+
+    .orb-1 { animation: floatOrb1 9s ease-in-out infinite; }
+    .orb-2 { animation: floatOrb2 11s ease-in-out infinite; }
+    .dynamic-card { animation: pulseCard 5s ease-in-out infinite; }
+    .flow-line { stroke-dasharray: 8 6; animation: dashMove 4s linear infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="400" rx="16" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Subtle Blueprint / Grid Lines in Background -->
+  <g opacity="0.12" stroke="#60a5fa" stroke-width="0.8">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="800" y1="0" x2="800" y2="400"/>
+    <line x1="1000" y1="0" x2="1000" y2="400"/>
+  </g>
+
+  <!-- Ambient Dynamic Floating Glow Orbs (Strictly Background Layer) -->
+  <g class="orb-1">
+    <circle cx="180" cy="120" r="160" fill="url(#glowGrad)"/>
+  </g>
+  <g class="orb-2">
+    <circle cx="1020" cy="280" r="190" fill="url(#glowGrad)"/>
+  </g>
+
+  <!-- Background Decorative Dynamic Animated Data Streams (Strictly behind cards & text) -->
+  <g opacity="0.45">
+    <path class="flow-line" d="M 50 350 C 250 320, 350 380, 550 340 S 850 310, 1150 350" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path class="flow-line" d="M 50 50 C 300 90, 500 20, 800 60 S 1050 30, 1150 70" fill="none" stroke="#818cf8" stroke-width="2"/>
+  </g>
+
+  <!-- Side Floating Glassmorphic Pills & Dynamic Elements (Placed safely to the right) -->
+  <g class="dynamic-card" transform="translate(860, 65)">
+    <!-- Clause Vault Card -->
+    <rect width="280" height="74" rx="12" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="37" r="18" fill="#6366f1" fill-opacity="0.25"/>
+    <!-- Document Icon -->
+    <path d="M 28 29 L 38 29 L 43 34 L 43 45 L 28 45 Z" fill="none" stroke="#a5b4fc" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="66" y="32" class="badge-text">Clause Library</text>
+    <text x="66" y="52" class="stat-label">Version Governance • Provenance</text>
+  </g>
+
+  <g class="dynamic-card" transform="translate(890, 155)">
+    <!-- Smart Execution Card -->
+    <rect width="250" height="74" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="37" r="18" fill="#0284c7" fill-opacity="0.25"/>
+    <!-- Check & Gear Icon -->
+    <path d="M 28 37 L 33 42 L 42 31" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <text x="66" y="32" class="badge-text">Automated Drafting</text>
+    <text x="66" y="52" class="stat-label">CLM Workflow • Smart Inputs</text>
+  </g>
+
+  <g class="dynamic-card" transform="translate(840, 245)">
+    <!-- Security / Legal Tech Card -->
+    <rect width="300" height="74" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="37" r="18" fill="#9333ea" fill-opacity="0.25"/>
+    <!-- Lock / Shield Icon -->
+    <path d="M 35 27 L 42 30 L 42 37 C 42 42, 35 46, 35 46 C 35 46, 28 42, 28 37 L 28 30 Z" fill="none" stroke="#c084fc" stroke-width="1.8"/>
+    <text x="66" y="32" class="badge-text">Enterprise Compliance</text>
+    <text x="66" y="52" class="stat-label">CC0 • Open Standards • Audit Logs</text>
+  </g>
+
+  <!-- Main Hero Title & Foreground Presentation Area (Left Aligned, Unobstructed) -->
+  <!-- Top Category Tag -->
+  <g transform="translate(70, 75)">
+    <rect width="206" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7"/>
+    <circle cx="18" cy="16" r="5" fill="#38bdf8"/>
+    <text x="32" y="21" class="badge-text" fill="#38bdf8">LEGAL TECH &amp; CLM SUITE</text>
+  </g>
+
+  <!-- Foreground Title -->
+  <text x="70" y="155" class="banner-title">
+    Standard Legal Template
+  </text>
+  <text x="70" y="215" class="banner-title" fill="url(#primaryGrad)">
+    Management
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="265" class="banner-subtitle">
+    Curated Platforms, Open-Source Repositories &amp; Contract Automation Systems
+  </text>
+
+  <!-- Bottom Interactive Metadata Badges in Banner -->
+  <g transform="translate(70, 305)">
+    <!-- Badge 1: Ecosystem -->
+    <rect width="180" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="18" class="stat-label">ECOSYSTEM</text>
+    <text x="18" y="34" class="stat-value">SaaS &amp; Open Source</text>
+  </g>
+
+  <g transform="translate(265, 305)">
+    <!-- Badge 2: Templates -->
+    <rect width="180" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="18" class="stat-label">GOVERNANCE</text>
+    <text x="18" y="34" class="stat-value">Clause Provenance</text>
+  </g>
+
+  <g transform="translate(460, 305)">
+    <!-- Badge 3: Integration -->
+    <rect width="180" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="18" class="stat-label">INTELLIGENCE</text>
+    <text x="18" y="34" class="stat-value">AI Redline &amp; Assembly</text>
+  </g>
+</svg>
