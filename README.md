@@ -56,44 +56,44 @@
 
 ## 🟩 Open-Source Software & Repositories
 
-🔓 Self-hosted, community-driven Legal Template Management tools, smart contract architectures, and standardized open legal libraries, sorted descending by GitHub Star count.
+🔓 Self-hosted, community-driven Legal Template Management tools, smart contract architectures, and standardized open legal libraries, sorted descending by GitHub Stars_Count.
 
-- ### ⚖️ [General-Legal/legal-templates](https://github.com/General-Legal/legal-templates) [![GitHub stars](https://img.shields.io/github/stars/General-Legal/legal-templates?style=social&color=white)](https://github.com/General-Legal/legal-templates/stargazers)
+- ### ⚖️ [General-Legal/legal-templates](https://github.com/General-Legal/legal-templates) [![GitHub_Stars](https://img.shields.io/github/stars/General-Legal/legal-templates?style=social&color=white)](https://github.com/General-Legal/legal-templates/stargazers)
   - **Stack:** Markdown / DOCX / Legal Engineering | **License:** CC0 1.0 Universal (Public Domain) 📜
   - **Overview:** High-quality, attorney-drafted standard legal templates tailored for tech startups and enterprises (NDAs, MSAs, DPAs, Offer Letters, Advisor Agreements). Optimized for human reading, Git versioning, and LLM automation.
   - **Best for:** Developers and legal teams looking for battle-tested, public-domain foundational agreement templates.
 
-- ### 📚 [ankane/awesome-legal](https://github.com/ankane/awesome-legal) [![GitHub stars](https://img.shields.io/github/stars/ankane/awesome-legal?style=social&color=white)](https://github.com/ankane/awesome-legal/stargazers)
+- ### 📚 [ankane/awesome-legal](https://github.com/ankane/awesome-legal) [![GitHub_Stars](https://img.shields.io/github/stars/ankane/awesome-legal?style=social&color=white)](https://github.com/ankane/awesome-legal/stargazers)
   - **Stack:** Markdown / Curated Index | **License:** CC0 1.0 Universal 📜
   - **Overview:** Curated directory of open, free standard legal documents, boilerplate contracts, investor docs (YC SAFE, NVCA), and terms of service templates.
   - **Best for:** Discovering reputable open-source legal documents across diverse business and compliance domains.
 
-- ### 🧠 [Open-Source-Legal/OpenContracts](https://github.com/Open-Source-Legal/OpenContracts) [![GitHub stars](https://img.shields.io/github/stars/Open-Source-Legal/OpenContracts?style=social&color=white)](https://github.com/Open-Source-Legal/OpenContracts/stargazers)
+- ### 🧠 [Open-Source-Legal/OpenContracts](https://github.com/Open-Source-Legal/OpenContracts) [![GitHub_Stars](https://img.shields.io/github/stars/Open-Source-Legal/OpenContracts?style=social&color=white)](https://github.com/Open-Source-Legal/OpenContracts/stargazers)
   - **Stack:** Python (Django) / React / GraphQL / Docker | **License:** Apache-2.0 📜
   - **Overview:** An open-source, self-hosted document intelligence and contract management system (DMS) built for parsing, annotating, searching, and managing legal contracts with Model Context Protocol (MCP) support.
   - **Best for:** Self-hosted legal engineering, structured data extraction, and AI agent contract orchestration.
 
-- ### 🤖 [jhpyle/docassemble](https://github.com/jhpyle/docassemble) [![GitHub stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social&color=white)](https://github.com/jhpyle/docassemble/stargazers)
+- ### 🤖 [jhpyle/docassemble](https://github.com/jhpyle/docassemble) [![GitHub_Stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social&color=white)](https://github.com/jhpyle/docassemble/stargazers)
   - **Stack:** Python / YAML / Markdown / Docker | **License:** MIT License 📜
   - **Overview:** Comprehensive expert system for guided web interviews and automated document assembly. Converts complex interview logic and question paths into finalized legal documents (.docx and PDF).
   - **Best for:** Automating dynamic legal intake questionnaires and template compilation for courts, clinics, and legal operations.
 
-- ### 🏛️ [accordproject/template-archive](https://github.com/accordproject/template-archive) [![GitHub stars](https://img.shields.io/github/stars/accordproject/template-archive?style=social&color=white)](https://github.com/accordproject/template-archive/stargazers)
+- ### 🏛️ [accordproject/template-archive](https://github.com/accordproject/template-archive) [![GitHub_Stars](https://img.shields.io/github/stars/accordproject/template-archive?style=social&color=white)](https://github.com/accordproject/template-archive/stargazers)
   - **Stack:** TypeScript / JavaScript / Concerto / Ergo | **License:** Apache-2.0 📜
   - **Overview:** Linux Foundation Accord Project repository housing computable legal templates and smart clauses that pair natural language prose with executable contract logic and data models.
   - **Best for:** Organizations building smart, computable legal contracts and automated clause validation.
 
-- ### 💻 [stella/stella](https://github.com/stella/stella) [![GitHub stars](https://img.shields.io/github/stars/stella/stella?style=social&color=white)](https://github.com/stella/stella/stargazers)
+- ### 💻 [stella/stella](https://github.com/stella/stella) [![GitHub_Stars](https://img.shields.io/github/stars/stella/stella?style=social&color=white)](https://github.com/stella/stella/stargazers)
   - **Stack:** TypeScript / Modern Web Stack | **License:** Apache-2.0 📜
   - **Overview:** Modern open-source legal workspace and document collaboration platform designed for legal practitioners.
   - **Best for:** Teams seeking a modern, self-hosted legal drafting and document workspace.
 
-- ### 🤝 [CommonPaper/Mutual-NDA](https://github.com/CommonPaper/Mutual-NDA) [![GitHub stars](https://img.shields.io/github/stars/CommonPaper/Mutual-NDA?style=social&color=white)](https://github.com/CommonPaper/Mutual-NDA/stargazers)
+- ### 🤝 [CommonPaper/Mutual-NDA](https://github.com/CommonPaper/Mutual-NDA) [![GitHub_Stars](https://img.shields.io/github/stars/CommonPaper/Mutual-NDA?style=social&color=white)](https://github.com/CommonPaper/Mutual-NDA/stargazers)
   - **Stack:** Markdown / Standard Contract | **License:** CC BY 4.0 📜
   - **Overview:** Standard open-source Mutual Non-Disclosure Agreement created by an attorney committee, allowing rapid contracting with standard cover page variables.
   - **Best for:** Tech companies wanting friction-free, standardized confidentiality agreements.
 
-- ### ☁️ [CommonPaper/CSA](https://github.com/CommonPaper/CSA) [![GitHub stars](https://img.shields.io/github/stars/CommonPaper/CSA?style=social&color=white)](https://github.com/CommonPaper/CSA/stargazers)
+- ### ☁️ [CommonPaper/CSA](https://github.com/CommonPaper/CSA) [![GitHub_Stars](https://img.shields.io/github/stars/CommonPaper/CSA?style=social&color=white)](https://github.com/CommonPaper/CSA/stargazers)
   - **Stack:** Markdown / Standard Contract | **License:** CC BY 4.0 📜
   - **Overview:** Standard Cloud Service Agreement (CSA) defining commercial terms for purchasing and providing SaaS software, designed to streamline B2B SaaS procurement.
   - **Best for:** SaaS startups seeking standard vendor/customer subscription contracts without extensive redlines.
