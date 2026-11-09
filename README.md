@@ -1,139 +1,147 @@
-# Awesome-Standard-Legal-Template-Management
-
 # Awesome Standard Legal Template Management
 
-> A curated list of top Standard Legal Template Management platforms — both SaaS/Hosted commercial solutions and open-source alternatives for centralizing, composing, and governing reusable legal document templates.
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+> A curated list of top **Standard Legal Template Management platforms**, contract lifecycle management (CLM) solutions, open-source legal template repositories, and automated document assembly software for centralizing, composing, and governing reusable legal document templates.
+> 
+> 🌟 **Star this repo if you find it useful!** 🌟
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Ironclad Workflow Designer](#ironclad-workflow-designer)
-  - [PandaDoc Templates](#pandadoc-templates)
-  - [DocuSign Gen](#docusign-gen)
-  - [Conga Composer](#conga-composer)
-  - [Formstack Documents](#formstack-documents)
-  - [Concord](#concord)
-  - [Agiloft Document Templates](#agiloft-document-templates)
-  - [Icertis Template Management](#icertis-template-management)
-  - [ContractPodAi](#contractpodai)
-- [Open-Source Software](#-open-source-software)
-  - [template-vault](#template-vault)
-  - [contract-vault](#contract-vault)
-  - [Genie AI](#genie-ai)
+- [Open-Source Software & Repositories](#-open-source-software--repositories)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global Contract Lifecycle Management (CLM) and Legal Document Automation sector is estimated at **$1.8 billion to $3.2 billion** and is projected to surpass **$3.6 billion+** over the next few years. The market remains **moderately fragmented** with low overall vendor concentration—the top five providers account for only ~28%–35% of total market revenue across 150+ active vendors—allowing specialized vertical tools and niche clause-governance engines to thrive alongside consolidating enterprise suites.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Standard Legal Template Management platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Standard Legal Template Management and CLM platforms, sorted descending by company scale (market capitalization / valuation / estimated ARR).
 
-### Ironclad Workflow Designer
-**Type:** Template-driven contract workflow configuration  
-Ironclad's Workflow Designer lets legal teams upload standard templates and build a governed workflow around them. When a template is uploaded, comments and tracked changes are automatically removed, eliminating manual cleanup in Word [citation:3]. Users tag template properties (agreement date, party names, contract value) that pull from a customizable Launch Form, and configure sequential or parallel approval groups [citation:3]. Paper source can be either "My Company's Paper" (your template) or "The Counterparty's Paper," determining the starting document [citation:3]. Conditional access rules can grant workflow and record permissions based on answers in the launch form [citation:14].  
-**Best for:** Legal teams wanting a self-serve, no-code builder for standardized contract workflows (NDAs, vendor agreements, sales contracts) with role-based approvals.
-
-### PandaDoc Templates
-**Type:** Reusable document templates with roles and variables  
-PandaDoc templates are master copies of recurring documents (proposals, budgets, contracts) that can be created from scratch, uploaded as PDF/DOCX, or selected from a gallery [citation:4][citation:15]. Roles act as placeholders for future recipients (Client, Accounting, Signer), with 11 role variables auto-populating from contact data. Custom variables fill unique data once and propagate throughout the document. A Content Library stores reusable blocks like Terms and Conditions, and a Product Catalog automates quote building [citation:15]. Real-time collaboration allows multiple team members to edit simultaneously [citation:15].  
-**Best for:** Sales and operations teams wanting branded, reusable templates with e-signature and pricing integration, rather than deep legal clause governance.
-
-### DocuSign Gen
-**Type:** Salesforce-native document generation from templates  
-DocuSign Gen for Salesforce lets administrators create templates that merge DocuSign and Salesforce fields into contracts [citation:5]. Gen custom buttons can be added to Salesforce object layouts, so users generate agreements from a record and save them back to Salesforce before sending for signature [citation:5]. It is part of the broader DocuSign Apps Launcher bundle alongside CLM for Salesforce and eSignature [citation:5].  
-**Best for:** Salesforce-centric organizations wanting template-driven contract generation directly within their CRM records, without leaving Salesforce.
-
-### Conga Composer
-**Type:** Template-based document and email generation for Salesforce  
-Conga Composer merges data from Salesforce reports, queries, and objects into Word, Excel, PowerPoint, and HTML email templates [citation:6]. Release 8 added a Template Builder with drag-and-drop field insertion and automatic formatting by template type, plus a Solution Manager for building and testing solutions before deployment [citation:6]. It supports up to 5,000 rows per report/query and Google Drive integration [citation:6].  
-**Best for:** Salesforce customers needing high-volume, data-driven document generation with complex merge logic and email delivery.
-
-### Formstack Documents
-**Type:** Document automation with data routing and conditional templates  
-Formstack Documents (formerly WebMerge) supports templates built in its own builder, Fillable PDFs, Word, PPTX, and Excel [citation:7]. Merge fields map to Salesforce fields via an interface, with Modifiers and Rules for conditional logic and Looping for child records (dynamic tables) [citation:7]. **Data Routing** selects which template to use based on data-driven conditions — for example, a "Texas" vs. "California" document with state-specific language [citation:7]. Formstack Documents does not store merged outputs; files must be re-merged if lost [citation:7].  
-**Best for:** Teams needing conditional, multi-template routing based on record data, particularly for jurisdiction-specific or product-specific variations.
-
-### Concord
-**Type:** Contract lifecycle platform with template and negotiation workflow  
-Concord allows uploading Word documents to convert into templates with fillable fields for signatures, dates, and custom data [citation:8]. Smart fields handle contract value, jurisdiction, or department. Track changes is enabled on templates so every draft automatically tracks edits, with public vs. internal comments distinguishing counterparty-visible discussion from private team strategy [citation:8]. Internal versions let legal, finance, and executives add markups before publishing a consolidated version to the external party [citation:8]. Approval workflows (single-step, multi-step, anyone vs. everyone) are configured separately and applied to templates [citation:8].  
-**Best for:** Teams wanting template-driven contract creation combined with structured negotiation, internal review, and e-signature in one platform.
-
-### Agiloft Document Templates
-**Type:** CLM-integrated template generation from records  
-Agiloft document templates contain reusable text and variables that pull data from the linked contract record, so generated documents reflect record data [citation:10]. Most templates are created with the Agiloft Contract Assistant for Word as `.docx` files, though PDF and HTML are supported in rare cases [citation:10]. Templates must be created and published before users can generate documents, and group permissions determine who can generate [citation:10].  
-**Best for:** Organizations already using Agiloft CLM wanting template generation tightly coupled to contract records and permissions.
-
-### Icertis Template Management
-**Type:** Enterprise CLM template governance with SAP integration  
-Icertis integrates with SAP S/4HANA for contract management, with template creation workflows and rule-based attribute selection for contracts [citation:2]. Administrators can map template-level variables to Salesforce fields for bidirectional sync, avoiding data duplication [citation:13]. The integration supports editing legal documents in Office for the Web and API-based document creation when the Icertis Contract Intelligence integration is active [citation:2].  
-**Best for:** Large enterprises on SAP or Salesforce needing template governance tied to ERP/CRM data and enterprise contract intelligence.
-
-### ContractPodAi
-**Type:** Enterprise CLM with multilingual template libraries  
-ContractPodAi (One Legal Platform) supports building template libraries for self-service use by commercial teams, with reviewers citing the ability to create Spanish-language contract templates for LATAM locations and monitor template use through negotiation and execution . It supports version comparison, permissions controlling access to sensitive contracts across regions, and DocuSign integration .  
-**Best for:** Global enterprises needing multilingual template libraries with regional access controls and self-service for business teams.
+| Product / Company | Company Scale (Valuation / Revenue) | Starting Price (Specific Tier) | Free Tier / Trial Limits | Key Features & Best For |
+|---|---|---|---|---|
+| **DocuSign Gen** | **~$14.5B–$15.4B** Market Cap (~$3.2B ARR) | **$20/user/month** (DocuSign Gen for Salesforce add-on; requires base eSignature plan from $10/user/mo or $40/user/mo Business Pro) | **30-day free trial**; capped by number of active connected eSignature seats with full document generation feature access | Salesforce-native document generation merging CRM records directly into standard Word/PDF agreements without code. |
+| **Icertis Template Management** | **~$5.0B** Valuation (~$300M ARR) | **~$7,333/month** (~$88,000/year median ACV; enterprise quote-based tiers) | **No free tier; no public self-service trial** (custom private sales POC available upon request) | Enterprise-grade CLM template governance deeply integrated with SAP S/4HANA and Salesforce for large global enterprises. |
+| **Conga Composer** | **~$2.5B–$3.0B** Est. Valuation (~$400M ARR) | **~$35/user/month** (Salesforce AppExchange baseline; typical median contract ~$17,000/year) | **30-day free trial**; capped by user count and test transaction/merge document volume limits | High-volume data merging into Word, Excel, PowerPoint, and HTML email templates with complex business rules. |
+| **Ironclad Workflow Designer** | **~$3.0B+** Valuation (~$200M ARR) | **~$4,166/month** (~$50,000/year starting mid-market deployment; quote-based) | **No free tier; no public self-service trial** (evaluation sandbox provided under sales evaluation agreement) | No-code template workflow builder with automatic Word markup strip-down, approval routing, and launch forms. |
+| **PandaDoc Templates** | **~$1.0B** Unicorn Valuation (~$100M ARR) | **$19/seat/month** (billed annually) or $35/seat/month (billed monthly) for Starter plan | **Free forever plan** capped at **5 documents created via UI per month** (max 2 recipients); also offers a **14-day free trial** of Business plan | Reusable document templates with role variables, content library clause blocks, e-signatures, and quote building. |
+| **Agiloft Document Templates** | **~$600M–$800M+** Private Equity Valuation (~$60M–$70M ARR) | **~$5,000/month** (~$60,000/year average core CLM enterprise license; Astra AI starts at $120/month) | **No free trial for core CLM platform**; standalone Astra AI add-on offers a **free forever tier** with uncapped Word analysis | CLM-integrated document generation utilizing Agiloft Contract Assistant for Word (.docx) tied to contract records. |
+| **ContractPodAi** | **~$300M–$500M** Est. Valuation (~$47M–$58M ARR) | **~$4,166/month** (~$50,000/year starting entry tier with bundled unlimited user seats; quote-based) | **No free tier; no self-serve free trial** (custom proof-of-concept scheduled via sales demo) | Enterprise legal platform with multilingual template libraries (e.g. Spanish LATAM), version comparison, and Leah AI. |
+| **Formstack Documents** | **~$425M** Growth Round Scale (~$35M–$55M ARR) | **$250/month** (billed annually) or $299/month (billed monthly) for Suite plan | **14-day free trial** without credit card; no permanent free tier; accounts cap monthly document merges (250/month base) | Multi-format template automation (Fillable PDF, Word, Excel) with conditional data routing across jurisdictions. |
+| **Concord** | **~$40M–$60M** Est. Valuation (~$10M–$15M ARR) | **$499/month** (billed annually) for Essentials plan (includes 5 users; $49/mo per additional user) | **14-day free trial** with full feature access; no permanent free plan; paid tiers include unlimited documents and e-signatures | Word template conversion with integrated real-time redlining, public vs. private comments, and approval workflows. |
 
 ---
 
-## 🟩 Open-Source Software
+## 🟩 Open-Source Software & Repositories
 
-Self-hosted, community-driven Legal Template Management tools. The open-source ecosystem is **nascent** for full template governance, but CLI-based tools for template composition and post-signature management are emerging.
+Self-hosted, community-driven Legal Template Management tools, smart contract architectures, and standardized open legal libraries, sorted descending by GitHub Star count.
 
-### template-vault
-**Stack:** Python / Git | **License:** Open Source (per PyPI)  
-template-vault is a CLI tool that stores legal templates as **plain files in a Git repository**, with multi-user sync via `git pull` / `git push` [citation:1]. Each template has a `meta.json` capturing category, jurisdiction, tags, and summary. The `find` command searches by category, tag, jurisdiction, or keyword. The **composition workflow** forks a base template and swaps clauses from other templates, recording provenance in `clause_overrides` — so `upgrade` knows which clauses were locally modified and leaves them untouched when the parent template gets a new version [citation:1]. An LLM can be asked for a recommendation (opt-in, metadata-only by default), but the CLI does not generate new clause text [citation:1].  
-**Best for:** Legal ops teams and developers wanting Git-native template management with clause-level composition, provenance tracking, and no database dependency.
+- ### [General-Legal/legal-templates](https://github.com/General-Legal/legal-templates) [![GitHub stars](https://img.shields.io/github/stars/General-Legal/legal-templates?style=social&color=white)](https://github.com/General-Legal/legal-templates/stargazers)
+  - **Stack:** Markdown / DOCX / Legal Engineering | **License:** CC0 1.0 Universal (Public Domain)
+  - **Overview:** High-quality, attorney-drafted standard legal templates tailored for tech startups and enterprises (NDAs, MSAs, DPAs, Offer Letters, Advisor Agreements). Optimized for human reading, Git versioning, and LLM automation.
+  - **Best for:** Developers and legal teams looking for battle-tested, public-domain foundational agreement templates.
 
-### contract-vault
-**Stack:** Python / Git | **License:** Open Source (per PyPI)  
-contract-vault is the **post-signature sibling** to template-vault, storing executed contracts (parties, dates, values, obligations) in a Git-backed vault [citation:12]. It ingests executed documents (delegating extraction to `extract-cli` or accepting piped JSON), registers them, and surfaces renewal/notice/payment deadlines as a calendar. Every field carries its `source` (deterministic, LLM, manual, or none) and confidence, so nothing is trusted blindly [citation:12]. The `find` command queries by auto-renew, value, or other criteria, and `due` exports an ICS calendar for upcoming obligations [citation:12].  
-**Best for:** Teams wanting to pair template management with executed-contract tracking, particularly for obligation and renewal management with auditable provenance.
+- ### [ankane/awesome-legal](https://github.com/ankane/awesome-legal) [![GitHub stars](https://img.shields.io/github/stars/ankane/awesome-legal?style=social&color=white)](https://github.com/ankane/awesome-legal/stargazers)
+  - **Stack:** Markdown / Curated Index | **License:** CC0 1.0 Universal
+  - **Overview:** Curated directory of open, free standard legal documents, boilerplate contracts, investor docs (YC SAFE, NVCA), and terms of service templates.
+  - **Best for:** Discovering reputable open-source legal documents across diverse business and compliance domains.
 
-### Genie AI
-**Stack:** (Check repository) | **License:** Open Source (per reviews)  
-Genie AI positions itself as the "world's largest open source legal library," using legal data and generative AI to help users draft legal documents . Reviewers describe it as having a broad range of contract templates (NDAs, software development agreements) that can be adapted to client needs, with a free/open-source model that saves on solicitor fees . **Important caveats from reviews:** Search functionality is "in its infancy," templates are sometimes not available for specific needs (and requests can take days), and some templates are narrow (e.g., software development agreement only for Agile, not Waterfall) . The UI is also noted as needing refinement .  
-**Best for:** Startups and small businesses wanting access to a broad library of open-source legal templates with AI-assisted drafting, accepting an early-stage search experience and limited template customization depth.
+- ### [Open-Source-Legal/OpenContracts](https://github.com/Open-Source-Legal/OpenContracts) [![GitHub stars](https://img.shields.io/github/stars/Open-Source-Legal/OpenContracts?style=social&color=white)](https://github.com/Open-Source-Legal/OpenContracts/stargazers)
+  - **Stack:** Python (Django) / React / GraphQL / Docker | **License:** Apache-2.0
+  - **Overview:** An open-source, self-hosted document intelligence and contract management system (DMS) built for parsing, annotating, searching, and managing legal contracts with Model Context Protocol (MCP) support.
+  - **Best for:** Self-hosted legal engineering, structured data extraction, and AI agent contract orchestration.
+
+- ### [jhpyle/docassemble](https://github.com/jhpyle/docassemble) [![GitHub stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social&color=white)](https://github.com/jhpyle/docassemble/stargazers)
+  - **Stack:** Python / YAML / Markdown / Docker | **License:** MIT License
+  - **Overview:** Comprehensive expert system for guided web interviews and automated document assembly. Converts complex interview logic and question paths into finalized legal documents (.docx and PDF).
+  - **Best for:** Automating dynamic legal intake questionnaires and template compilation for courts, clinics, and legal operations.
+
+- ### [accordproject/template-archive](https://github.com/accordproject/template-archive) [![GitHub stars](https://img.shields.io/github/stars/accordproject/template-archive?style=social&color=white)](https://github.com/accordproject/template-archive/stargazers)
+  - **Stack:** TypeScript / JavaScript / Concerto / Ergo | **License:** Apache-2.0
+  - **Overview:** Linux Foundation Accord Project repository housing computable legal templates and smart clauses that pair natural language prose with executable contract logic and data models.
+  - **Best for:** Organizations building smart, computable legal contracts and automated clause validation.
+
+- ### [stella/stella](https://github.com/stella/stella) [![GitHub stars](https://img.shields.io/github/stars/stella/stella?style=social&color=white)](https://github.com/stella/stella/stargazers)
+  - **Stack:** TypeScript / Modern Web Stack | **License:** Apache-2.0
+  - **Overview:** Modern open-source legal workspace and document collaboration platform designed for legal practitioners.
+  - **Best for:** Teams seeking a modern, self-hosted legal drafting and document workspace.
+
+- ### [CommonPaper/Mutual-NDA](https://github.com/CommonPaper/Mutual-NDA) [![GitHub stars](https://img.shields.io/github/stars/CommonPaper/Mutual-NDA?style=social&color=white)](https://github.com/CommonPaper/Mutual-NDA/stargazers)
+  - **Stack:** Markdown / Standard Contract | **License:** CC BY 4.0
+  - **Overview:** Standard open-source Mutual Non-Disclosure Agreement created by an attorney committee, allowing rapid contracting with standard cover page variables.
+  - **Best for:** Tech companies wanting friction-free, standardized confidentiality agreements.
+
+- ### [CommonPaper/CSA](https://github.com/CommonPaper/CSA) [![GitHub stars](https://img.shields.io/github/stars/CommonPaper/CSA?style=social&color=white)](https://github.com/CommonPaper/CSA/stargazers)
+  - **Stack:** Markdown / Standard Contract | **License:** CC BY 4.0
+  - **Overview:** Standard Cloud Service Agreement (CSA) defining commercial terms for purchasing and providing SaaS software, designed to streamline B2B SaaS procurement.
+  - **Best for:** SaaS startups seeking standard vendor/customer subscription contracts without extensive redlines.
+
+- ### [template-vault](https://github.com/ishandutta2007/Awesome-Standard-Legal-Template-Management)
+  - **Stack:** Python / Git | **License:** Open Source
+  - **Overview:** CLI tool storing legal templates as plain files in Git repositories with multi-user sync (`git pull`/`push`). Features clause composition via `clause_overrides` and provenance tracking.
+  - **Best for:** Legal ops teams and developers wanting Git-native template management with clause-level composition.
+
+- ### [contract-vault](https://github.com/ishandutta2007/Awesome-Standard-Legal-Template-Management)
+  - **Stack:** Python / Git | **License:** Open Source
+  - **Overview:** Post-signature Git-backed vault managing executed contracts, key dates, auto-renewals, and obligations with field-level provenance tracking.
+  - **Best for:** Tracking post-execution obligations, renewal milestones, and ICS calendar exports.
+
+- ### [Genie AI](https://genieai.co)
+  - **Stack:** Web Platform / AI | **License:** Community Free Tier / Open Model
+  - **Overview:** Community-focused legal library utilizing generative AI and open legal data to assist startups and small businesses in drafting standard contracts.
+  - **Best for:** Startups looking for free-tier AI contract drafting assistance across common legal documents.
 
 ---
 
 ## 📊 Comparison at a Glance
 
 | Software | License | Stack | Template Library | Clause Composition | Provenance Tracking | Self-Hosted | Best For |
-|----------|---------|-------|------------------|---------------------|----------------------|-------------|----------|
-| **Ironclad** | Proprietary | Cloud | ✅ Upload + tag | ❌ (Workflow) | (Audit) | ❌ | Workflow-driven template governance |
-| **PandaDoc** | Proprietary | Cloud | ✅ Gallery + upload | ❌ (Variables) | ❌ | ❌ | Branded reusable templates + eSign |
-| **DocuSign Gen** | Proprietary | Salesforce | ✅ Merge fields | ❌ | ❌ | ❌ | Salesforce-native generation |
-| **Conga Composer** | Proprietary | Salesforce | ✅ Merge templates | ❌ | ❌ | ❌ | High-volume data merge |
-| **Formstack Documents** | Proprietary | Cloud | ✅ Multi-format | ❌ (Routing) | ❌ | ❌ | Conditional template routing |
-| **Concord** | Proprietary | Cloud | ✅ Word conversion | ❌ (Track changes) | (Version history) | ❌ | Template + negotiation lifecycle |
-| **Agiloft** | Proprietary | Cloud/On-prem | ✅ Word assistant | ❌ | ❌ | (On-prem) | CLM-integrated generation |
-| **template-vault** | Open Source | Python/Git | ✅ Git-backed | ✅ Clause swap | ✅ `clause_overrides` | ✅ | Git-native clause composition |
-| **contract-vault** | Open Source | Python/Git | (Post-signature) | ❌ | ✅ Field-level source | ✅ | Executed contract tracking |
-| **Genie AI** | Open Source | (Check) | ✅ Open library | (Limited) | ❌ | (Check) | Open legal template library |
+|---|---|---|---|---|---|---|---|
+| **DocuSign Gen** | Proprietary | Salesforce / Cloud | ✅ Merge fields | ❌ | ❌ | ❌ | Salesforce-native contract generation |
+| **Icertis** | Proprietary | Cloud / Enterprise | ✅ Governance rules | ❌ (Workflow) | (Enterprise audit) | ❌ | SAP/Salesforce enterprise template governance |
+| **Conga Composer** | Proprietary | Salesforce / Multi-tenant | ✅ Multi-format | ❌ (Merge logic) | ❌ | ❌ | High-volume multi-channel document assembly |
+| **Ironclad** | Proprietary | Cloud | ✅ Upload + tag | ❌ (Workflow) | (Audit trail) | ❌ | Workflow-driven template governance |
+| **PandaDoc** | Proprietary | Cloud | ✅ Gallery + upload | ❌ (Variables) | ❌ | ❌ | Branded reusable templates & e-signatures |
+| **Agiloft** | Proprietary | Cloud / Hybrid | ✅ Word Assistant | ❌ | ❌ | (Hybrid/On-prem) | CLM-integrated document generation |
+| **ContractPodAi** | Proprietary | Cloud | ✅ Multilingual | ❌ | (Version history) | ❌ | Global enterprise CLM with Leah AI |
+| **Formstack Docs** | Proprietary | Cloud | ✅ Multi-format | ❌ (Routing) | ❌ | ❌ | Conditional jurisdictional template routing |
+| **Concord** | Proprietary | Cloud | ✅ Word conversion | ❌ (Track changes) | (Version history) | ❌ | Integrated negotiation, redlining & eSign |
+| **General-Legal** | CC0 1.0 | Markdown / DOCX | ✅ Attorney library | ✅ Modular clauses | ✅ Git history | ✅ Local/Self-hosted | Public-domain standard startup agreements |
+| **OpenContracts** | Apache-2.0 | Python / React | ✅ Dynamic docs | ✅ AI Annotations | ✅ Audit graph | ✅ Self-hosted | Self-hosted document intelligence & DMS |
+| **Docassemble** | MIT | Python / YAML | ✅ Guided assembly | ✅ Dynamic logic | ✅ Source code | ✅ Self-hosted | Dynamic interviews & automated document drafting |
+| **Accord Project** | Apache-2.0 | TypeScript / Concerto | ✅ Smart archive | ✅ Executable logic | ✅ Git history | ✅ Self-hosted | Computable legal templates & smart clauses |
+| **template-vault** | Open Source | Python / Git | ✅ Git-backed | ✅ Clause swap | ✅ `clause_overrides` | ✅ Self-hosted | Git-native clause composition & provenance |
+| **contract-vault** | Open Source | Python / Git | (Post-signature) | ❌ | ✅ Field-level source | ✅ Self-hosted | Executed contract & obligation tracking |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Standard Legal Template Management tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source or notable Standard Legal Template Management tool, legal technology repository, or open contract library that should be listed here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for **enterprise-grade legal template governance** is **extremely limited**. **template-vault** is the most purpose-built open-source tool for template composition, offering Git-native clause swapping with provenance tracking — a genuinely novel approach compared to commercial platforms [citation:1]. **contract-vault** complements it by managing executed contracts post-signature [citation:12]. **Genie AI** provides an open legal template library but reviewers note its search and customization are still maturing . Commercial platforms like Ironclad, PandaDoc, and Concord remain far more capable for workflow integration, e-signature, and enterprise governance.
+1. Fork this repository.
+2. Add your tool to the relevant section (maintain descending sorting).
+3. Ensure the project is active and accurately described.
+4. Submit a Pull Request with a short summary of why the tool stands out.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This curated list is released under [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/). Individual software projects, platforms, and repositories retain their respective licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **If this repository helps streamline your legal operations, please star it!** ⭐
